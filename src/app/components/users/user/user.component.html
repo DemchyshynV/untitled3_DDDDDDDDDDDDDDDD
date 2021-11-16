@@ -1,0 +1,5 @@
+<div class="user">
+<h1>{{user.id}}) {{user.name}} {{user.username}}</h1>
+  <button (click)="getPosts()">posts</button>
+</div>
+<app-posts *ngIf="show" [userId]="userId"></app-posts>
